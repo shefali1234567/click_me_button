@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <style>
+          .contain{
+            text-align: center;   
+            width: 300px;  
+            height: 200px;  
+            padding-top: 200px; 
+            padding-left:400px; 
+            padding-bottom: 200px;
+            padding-right:200px;
+            }
+            body{
+                background-color:violet;
+            }
+        
+#btn{  
+font-size: 25px; 
+background-color:violet; 
+           }
+      </style>
+    </head>
+    <body>
+        <div class="contain">
+        <button id="btn"> Click me!</button>
+        <script>
+
+            
+            const button = document.querySelector('button')
+            const body = document.querySelector('body')
+            const colors = ['red', 'green', 'blue', 'yellow', 'pink', 'purple']
+            button.addEventListener('click', changeBackground)  
+            function changeBackground(){
+                const colorIndex= parseInt(Math.random()*colors.length)
+                body.style.backgroundColor = colors[colorIndex];
+                btn.style.backgroundColor= colors[colorIndex];
+            }
+        </script>
+          
+        </body>
+    </div>
+    </body>
+</html>
